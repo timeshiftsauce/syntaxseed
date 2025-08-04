@@ -1,0 +1,41 @@
+{
+  "name": "serves",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index",
+    "start": "node start.js",
+    "start:cluster": "node start.js --cluster",
+    "start:single": "node start.js --single",
+    "dev:cluster": "nodemon cluster.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "express-session": "^1.18.2",
+    "ioredis": "^5.6.1",
+    "js-yaml": "^4.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "lodash": "^4.17.21",
+    "mysql2": "^3.14.2",
+    "nodemailer": "^7.0.5",
+    "nodemon": "^3.1.10",
+    "path-to-regexp": "6.2.0",
+    "svg-captcha": "^1.4.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}

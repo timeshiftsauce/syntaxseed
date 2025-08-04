@@ -1,0 +1,6 @@
+node_modules
+.git
+.DS_Store
+docker-compose.yml
+logs/*.*
+db.config.yaml

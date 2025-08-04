@@ -1,0 +1,3 @@
+[submodule "buildadmin"]
+	path = buildadmin
+	url  = https://gitee.com/sqjcode/bd

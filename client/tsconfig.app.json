@@ -1,0 +1,24 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "axios/**/*",
+    "components.d.ts",
+    "**/*.vue"
+  ],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "noImplicitAny": false,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "types": ["unplugin-fonts/client"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "none"
+  }
+}

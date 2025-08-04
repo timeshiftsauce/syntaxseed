@@ -1,0 +1,90 @@
+# 依赖包
+node_modules/
+
+# 日志文件
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 编辑器目录和文件
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 本地环境文件
+.env.local
+.env.*.local
+
+# 构建输出
+/dist
+
+# 缓存目录
+.cache/
+.temp/
+.nuxt/
+.next/
+.output/
+
+# 测试覆盖率报告
+/coverage
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 数据库配置（包含敏感信息）
+/serves/db.config.yaml
+
+# 临时文件
+*.tmp
+*.bak
+
+# 锁文件（根据团队需求决定是否忽略）
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# 本地证书
+*.pem
+*.key
+*.crt
+
+# 构建时间戳文件
+*.timestamp-*
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
+
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo

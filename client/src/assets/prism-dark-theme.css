@@ -1,0 +1,203 @@
+/**
+ * 暗色模式下的Prism.js主题，优化macOS风格的代码高亮
+ */
+
+.dark code[class*="language-"],
+.dark pre[class*="language-"] {
+  color: #f8f8f2;
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family:
+    "Fira Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 14px;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 20px;
+  tab-size: 4;
+  hyphens: none;
+}
+
+/* Code blocks */
+.dark pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.75rem;
+  background: #1a1a1a !important;
+}
+
+/* 当代码块在包装器内时，移除顶部圆角，只保留底部圆角 */
+.dark .code-block-wrapper pre[class*="language-"] {
+  border-radius: 0;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  margin: 0;
+}
+
+.dark :not(pre) > code[class*="language-"],
+.dark pre[class*="language-"] {
+  background: #1a1a1a;
+}
+
+/* Inline code */
+.dark :not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+/* 暗色模式下的代码块样式 */
+.dark .token.comment,
+.dark .token.prolog,
+.dark .token.doctype,
+.dark .token.cdata {
+  color: #6a9955;
+}
+
+.dark .token.punctuation {
+  color: #f8f8f2;
+}
+
+.dark .namespace {
+  opacity: 0.7;
+}
+
+.dark .token.property,
+.dark .token.tag,
+.dark .token.constant,
+.dark .token.symbol,
+.dark .token.deleted {
+  color: #ff79c6;
+}
+
+.dark .token.boolean,
+.dark .token.number {
+  color: #bd93f9;
+}
+
+.dark .token.selector,
+.dark .token.attr-name,
+.dark .token.string,
+.dark .token.char,
+.dark .token.builtin,
+.dark .token.inserted {
+  color: #64ffda;
+}
+
+.dark .token.operator,
+.dark .token.entity,
+.dark .token.url,
+.dark .language-css .token.string,
+.dark .style .token.string,
+.dark .token.variable {
+  color: #f8f8f2;
+}
+
+.dark .token.atrule,
+.dark .token.attr-value,
+.dark .token.function,
+.dark .token.class-name {
+  color: #66d9ef;
+}
+
+.dark .token.keyword {
+  color: #ff79c6;
+}
+
+.dark .token.regex,
+.dark .token.important {
+  color: #fd971f;
+}
+
+.dark .token.important,
+.dark .token.bold {
+  font-weight: bold;
+}
+
+.dark .token.italic {
+  font-style: italic;
+}
+
+.dark .token.entity {
+  cursor: help;
+}
+
+/* 代码块头部样式 */
+.dark .code-block-wrapper .code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #2a2a2a;
+  border-bottom: 1px solid #444;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.dark .code-block-wrapper .language {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.dark .code-block-wrapper .copy-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+.dark .code-block-wrapper .copy-btn:hover {
+  color: var(--color-accent-cyan);
+}
+
+/* 增强代码块边框 */
+.dark .code-block-wrapper {
+  border: 1px solid #444;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* 行号样式优化 */
+.dark .line-numbers .line-numbers-rows {
+  border-right: 1px solid #444;
+}
+
+.dark .line-numbers-rows > span:before {
+  color: #666;
+}
+
+/* 行号样式优化 */
+.dark .line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  letter-spacing: -1px;
+  border-right: 1px solid #444;
+  user-select: none;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+}
+
+.dark .line-numbers-rows > span:before {
+  color: #888;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* 确保行号容器在暗色模式下可见 */
+.dark pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}

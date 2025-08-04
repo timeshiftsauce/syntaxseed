@@ -1,0 +1,490 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("./iconfont.css");
+
+:root {
+  --primary: #2a9d8f;
+  --bg-light: #f0f7ff;
+  --bg-dark: #0a192f;
+  --code-accent: #64ffda;
+}
+
+html,
+body {
+  touch-action: pan-x pan-y;
+  /* 只允许平移手势，禁止缩放 */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-opensans text-gray-800 dark:text-gray-200;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-montserrat font-bold;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  div,
+  span,
+  i {
+    font-family:
+      "Roboto", "Montserrat", sans-serif, "Microsoft YaHei", "Magneto",
+      monospace;
+  }
+  code,
+  code *,
+  pre,
+  pre * {
+    font-family:
+      "Fira Code", Consolas, "Liberation Mono", "Courier New", monospace !important;
+  }
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  pre,
+  code {
+    @apply font-firacode;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-2 rounded-md font-medium transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-opacity-90;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  .wave-bg {
+    @apply relative overflow-hidden;
+  }
+
+  /* .wave-bg::before {
+    content: '';
+    @apply absolute w-full h-full bg-primary bg-opacity-10 dark:bg-opacity-20 -z-10;
+  } */
+
+  .wave-bg::after {
+    content: "";
+    @apply absolute w-[200%] h-[200%] top-0 left-[-50%] bg-primary bg-opacity-5 dark:bg-opacity-10 rounded-[40%] animate-wave -z-10;
+  }
+
+  .progress-bar {
+    @apply h-1 bg-gradient-to-r from-primary to-code-accent;
+  }
+
+  .tech-badge {
+    @apply inline-block px-3 py-1 rounded-full text-xs font-medium bg-primary bg-opacity-20 text-primary dark:bg-opacity-30 dark:text-code-accent;
+  }
+
+  /* 现代按钮样式 - 全局一致性 */
+  .modern-btn {
+    @apply relative px-8 py-4 rounded-full font-medium text-lg transition-all duration-300 overflow-hidden;
+    @apply transform hover:scale-105 active:scale-95 inline-flex items-center justify-center;
+  }
+
+  .modern-btn-primary {
+    @apply bg-gradient-to-r from-primary to-teal-400 dark:from-code-accent dark:to-teal-300 text-white;
+    @apply shadow-lg hover:shadow-xl;
+  }
+
+  .modern-btn-primary::before {
+    content: "";
+    @apply absolute inset-0 bg-gradient-to-r from-teal-400 to-primary dark:from-teal-300 dark:to-code-accent;
+    @apply opacity-0 transition-opacity duration-300;
+  }
+
+  .modern-btn-primary:hover::before {
+    @apply opacity-100;
+  }
+
+  .modern-btn-outline {
+    @apply bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-2 border-primary dark:border-code-accent;
+    @apply text-primary dark:text-code-accent hover:bg-primary hover:text-white dark:hover:bg-code-accent dark:hover:text-white;
+    @apply shadow-lg hover:shadow-xl;
+  }
+
+  /* 小尺寸按钮变体 */
+  .modern-btn-small {
+    @apply relative px-4 py-2 rounded-md font-medium text-sm transition-all duration-300 overflow-hidden;
+    @apply transform hover:scale-105 active:scale-95 inline-flex items-center justify-center;
+  }
+
+  .modern-btn-small.modern-btn-primary {
+    @apply bg-gradient-to-r from-primary to-teal-400 dark:from-code-accent dark:to-teal-300 text-white;
+    @apply shadow-md hover:shadow-lg;
+  }
+
+  .modern-btn-small.modern-btn-outline {
+    @apply bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-2 border-primary dark:border-code-accent;
+    @apply text-primary dark:text-code-accent hover:bg-primary hover:text-white dark:hover:bg-code-accent dark:hover:text-white;
+  }
+
+  /* 全局响应式改进 */
+  @media (max-width: 640px) {
+    .modern-btn {
+      @apply px-5 py-3 text-base w-full justify-center;
+    }
+
+    .modern-btn-small {
+      @apply px-3 py-2 text-xs;
+    }
+
+    /* 确保触摸目标大小符合可访问性要求 */
+    .modern-btn,
+    .modern-btn-small {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+
+  /* 减少动画效果的媒体查询支持 */
+  @media (prefers-reduced-motion: reduce) {
+    .modern-btn,
+    .modern-btn-small {
+      @apply transition-none;
+    }
+
+    .modern-btn:hover,
+    .modern-btn-small:hover {
+      @apply transform-none;
+    }
+  }
+}
+
+/* 3D卡片效果 */
+.card-3d {
+  @apply transition-all duration-300 transform;
+  perspective: 1000px;
+}
+
+.card-3d:hover {
+  @apply -translate-y-2 rotate-1;
+}
+
+/* 阅读进度条 */
+.reading-progress {
+  @apply fixed top-0 left-0 h-1 z-50 bg-gradient-to-r from-primary to-code-accent;
+}
+
+/* 代码高亮自定义样式 */
+.code-block {
+  @apply relative rounded-lg overflow-hidden;
+}
+
+.code-block .copy-button {
+  @apply absolute top-2 right-2 p-1 rounded bg-gray-700 text-white opacity-0 transition-opacity;
+}
+
+.code-block:hover .copy-button {
+  @apply opacity-100;
+}
+
+/* 暗黑模式切换按钮 */
+.theme-toggle {
+  @apply relative w-12 h-6 rounded-full bg-gray-300 dark:bg-gray-700 transition-colors duration-300;
+}
+
+.theme-toggle::after {
+  content: "";
+  @apply absolute top-1 left-1 w-4 h-4 rounded-full bg-white dark:bg-code-accent transform transition-transform duration-300;
+}
+
+.theme-toggle.dark::after {
+  @apply translate-x-6;
+}
+
+html.dark img {
+  filter: invert(0.3) !important;
+  will-change: filter;
+  image-rendering: pixelated;
+}
+
+img {
+  transition: filter 0.3s ease-in-out;
+  will-change: filter;
+  image-rendering: pixelated;
+}
+
+/* 自定义滚动条样式 */
+@layer base {
+  /* 全局滚动条样式 */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(247, 250, 252, 0.8);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      180deg,
+      var(--primary) 0%,
+      rgba(42, 157, 143, 0.7) 100%
+    );
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      180deg,
+      var(--primary) 0%,
+      var(--code-accent) 100%
+    );
+  }
+
+  /* 暗色模式滚动条 */
+  .dark ::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.6);
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      180deg,
+      var(--code-accent) 0%,
+      rgba(100, 255, 218, 0.7) 100%
+    );
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      180deg,
+      var(--code-accent) 0%,
+      var(--primary) 100%
+    );
+  }
+
+  /* 代码块滚动条 */
+  pre::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  pre::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.3);
+    border-radius: 3px;
+  }
+
+  pre::-webkit-scrollbar-thumb {
+    background: rgba(100, 255, 218, 0.5);
+    border-radius: 3px;
+  }
+
+  /* 长文本区域滚动条 */
+  .prose::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .prose::-webkit-scrollbar-thumb {
+    background: rgba(42, 157, 143, 0.5);
+    border-radius: 3px;
+  }
+
+  /* 表格滚动条 */
+  table::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  table::-webkit-scrollbar-thumb {
+    background: rgba(42, 157, 143, 0.4);
+    border-radius: 3px;
+  }
+
+  /* Firefox滚动条样式 */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) rgba(247, 250, 252, 0.8);
+  }
+
+  .dark * {
+    scrollbar-color: var(--code-accent) rgba(15, 23, 42, 0.6);
+  }
+}
+
+/* 博客页面专用
+样式 */
+@layer components {
+  /* 博客卡片包装器 */
+  .blog-card-wrapper {
+    @apply opacity-0;
+    animation: fadeInUp 0.8s ease-out both;
+  }
+
+  /* 博客页面渐变背景 */
+  .blog-gradient-bg {
+    background: linear-gradient(
+      135deg,
+      rgba(42, 157, 143, 0.05) 0%,
+      rgba(100, 255, 218, 0.05) 50%,
+      rgba(42, 157, 143, 0.05) 100%
+    );
+  }
+
+  /* 文章卡片悬浮效果 */
+  .article-card-hover {
+    @apply transition-all duration-500 ease-out;
+    @apply hover:shadow-2xl hover:-translate-y-3;
+    @apply hover:shadow-primary/20 dark:hover:shadow-code-accent/20;
+  }
+
+  /* 标签云动画 */
+  .tag-cloud-item {
+    @apply transition-all duration-300 ease-out;
+    @apply hover:scale-110 hover:shadow-lg;
+    animation: tagFloat 3s ease-in-out infinite;
+  }
+
+  .tag-cloud-item:nth-child(odd) {
+    animation-delay: -1.5s;
+  }
+
+  /* 阅读进度指示器 */
+  .reading-progress-indicator {
+    @apply fixed top-0 left-0 h-1 bg-gradient-to-r from-primary via-teal-400 to-code-accent z-50;
+    @apply transition-all duration-300 ease-out;
+    background-size: 200% 100%;
+    animation: progressGradient 2s ease-in-out infinite;
+  }
+
+  /* 文章内容动画 */
+  .article-content-animate {
+    animation: contentReveal 1s ease-out forwards;
+  }
+
+  /* 搜索框聚焦效果 */
+  .search-focus-effect {
+    @apply relative overflow-hidden;
+  }
+
+  .search-focus-effect::before {
+    content: "";
+    @apply absolute inset-0 bg-gradient-to-r from-primary/20 to-code-accent/20;
+    @apply opacity-0 transition-opacity duration-300;
+    @apply rounded-inherit;
+  }
+
+  .search-focus-effect:focus-within::before {
+    @apply opacity-100;
+  }
+}
+
+/* 博客动画关键帧 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tagFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes progressGradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes contentReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 博客页面响应式优化 */
+@media (max-width: 768px) {
+  .blog-card-wrapper {
+    animation-duration: 0.6s;
+  }
+  :root {
+    --p-toast-width: 70vw !important;
+  }
+  .article-card-hover:hover {
+    @apply -translate-y-1;
+  }
+
+  .tag-cloud-item {
+    animation: none;
+  }
+}
+
+/* 减少动画效果支持 */
+@media (prefers-reduced-motion: reduce) {
+  .blog-card-wrapper,
+  .article-card-hover,
+  .tag-cloud-item,
+  .article-content-animate {
+    animation: none;
+    @apply transition-none;
+  }
+
+  .reading-progress-indicator {
+    animation: none;
+  }
+
+  .article-card-hover:hover,
+  .tag-cloud-item:hover {
+    @apply transform-none;
+  }
+}

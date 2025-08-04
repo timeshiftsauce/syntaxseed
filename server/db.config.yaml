@@ -1,0 +1,13 @@
+db:
+  client: "mysql2"
+  connection:
+    host: "47.96.72.224"
+    user: "root"
+    password: "20081005zcl"
+    database: "syntaxseed"
+    port: 3306
+
+redis:
+  port: 6379
+  host: "47.96.72.224"
+  password: "20081005zcl"
