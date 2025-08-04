@@ -1,6 +1,6 @@
 services:
   backend:
-    image: your-registry/syntaxseed-backend:1.0.0
+    image: crpi-n43n60vraettswns.cn-shenzhen.personal.cr.aliyuncs.com/sqj_zcl/blog-serves:1.0.0
     build:
       context: .
       dockerfile: Dockerfile
@@ -84,7 +84,7 @@ services:
           cpus: "1.0"
 
   frontend:
-    image: your-registry/syntaxseed-frontend:1.0.0
+    image: crpi-n43n60vraettswns.cn-shenzhen.personal.cr.aliyuncs.com/sqj_zcl/blog-clinent:1.0.0
     build:
       context: .
       dockerfile: Dockerfile
@@ -121,7 +121,8 @@ services:
 
   redis:
     image: redis:7-alpine
-    command: redis-server --requirepass your-secure-redis-password --appendonly yes
+    #删掉当前注释编辑 下面【your-secure-redis-password】
+    command: redis-server --requirepass 【your-secure-redis-password】 --appendonly yes
     ports:
       - "127.0.0.1:6379:6379"
     volumes:
