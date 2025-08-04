@@ -598,7 +598,7 @@ docker-compose -f docker-compose-dev.yml restart backend
 docker-compose -f docker-compose-dev.yml logs -f backend
 ```
 
-### 生产环境部署
+### 生产环境部署 （**LOOK ME important**）
 
 #### 生产环境配置
 
