@@ -1,0 +1,1 @@
+const e={id:"id",update_time:"update_time",create_time:"create_time",year:"year",title:"title",string:"string",description:"description",technolog:"technolog",skills:"skills",image:"image",data:"data","quick Search Fields":"id"};export{e as default};

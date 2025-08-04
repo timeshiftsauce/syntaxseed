@@ -1,0 +1,18 @@
+export default {
+    id: 'id',
+    blog_id: 'blog_id',
+    blog__title: 'title',
+    author: 'author',
+    content: 'content',
+    create_time: 'create_time',
+    update_time: 'update_time',
+    avatar: 'avatar',
+    website: 'website',
+    email: 'email',
+    parent_id: 'parent_id',
+    parent__id: 'id',
+    status: 'status',
+    'status 0': 'status 0',
+    'status 1': 'status 1',
+    'quick Search Fields': 'id',
+}

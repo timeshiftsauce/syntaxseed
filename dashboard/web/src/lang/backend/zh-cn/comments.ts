@@ -1,0 +1,18 @@
+export default {
+    id: 'id',
+    blog_id: '关联的博客文章ID',
+    blog__title: '标题',
+    author: '评论作者名称',
+    content: '评论内容',
+    create_time: '评论创建时间',
+    update_time: '评论更新时间',
+    avatar: '作者头像URL',
+    website: '作者网站URL',
+    email: '作者邮箱,用于头像和通知',
+    parent_id: '父评论ID,用于回复功能',
+    parent__id: 'id',
+    status: '状态',
+    'status 0': '禁用',
+    'status 1': '启用',
+    'quick Search Fields': 'id',
+}

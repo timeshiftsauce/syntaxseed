@@ -1,0 +1,14 @@
+export default {
+    id: 'ID',
+    update_time: '修改时间',
+    create_time: '创建时间',
+    year: '年份',
+    title: '标题',
+    data: '日期范围',
+    description: '内容',
+    technolog: '标签',
+    skills: '技巧',
+    image: '图片',
+    string: '链接',
+    'quick Search Fields': 'ID',
+}

@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="90" fill="#F0F7FF" />
+  
+  <!-- 波浪装饰 -->
+  <path d="M30 120C45 100 55 140 70 120C85 100 95 140 110 120C125 100 135 140 150 120C165 100 175 140 190 120" stroke="#2A9D8F" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- 代码括号 -->
+  <path d="M60 70L40 100L60 130" stroke="#0A192F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M140 70L160 100L140 130" stroke="#0A192F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- 中心种子图形 -->
+  <circle cx="100" cy="100" r="20" fill="#2A9D8F" />
+  <path d="M100 80C100 80 85 95 85 110C85 125 100 130 100 130C100 130 115 125 115 110C115 95 100 80 100 80Z" fill="#64FFDA" />
+  
+  <!-- 光芒效果 -->
+  <circle cx="100" cy="100" r="5" fill="white" />
+  <path d="M100 70V75" stroke="#0A192F" stroke-width="3" stroke-linecap="round" />
+  <path d="M100 125V130" stroke="#0A192F" stroke-width="3" stroke-linecap="round" />
+  <path d="M70 100H75" stroke="#0A192F" stroke-width="3" stroke-linecap="round" />
+  <path d="M125 100H130" stroke="#0A192F" stroke-width="3" stroke-linecap="round" />
+</svg>

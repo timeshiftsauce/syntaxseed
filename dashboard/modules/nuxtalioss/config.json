@@ -1,0 +1,6 @@
+{
+    "nuxtDependencies": {
+        "js-sha1": "0.7.0"
+    },
+    "protectedFiles": ["web-nuxt/composables/mixins/baUpload.ts"]
+}
