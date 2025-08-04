@@ -119,7 +119,9 @@ pids
 
 
 dashboard/.env
+dashboard/CHANGELOG.md
 
+./dashboard/*.env
 
 
 
