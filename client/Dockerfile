@@ -23,12 +23,32 @@ CMD ["nginx", "-g", "daemon off;"]
 
 # 构建阶段
 FROM base AS build-stage
+
+# 接收构建参数
+ARG VITE_API_BASEURL=/api
+ARG VITE_staticHost=./
+ENV VITE_API_BASEURL=${VITE_API_BASEURL}
+ENV VITE_staticHost=${VITE_staticHost}
 COPY . .
 RUN pnpm run build
 
 # 生产环境
 FROM nginx:stable-alpine AS production
+
+# 安装必要工具
+RUN apk add --no-cache bash
+
+# 复制构建产物
 COPY --from=build-stage /app/dist /usr/share/nginx/html
+
+# 复制 nginx 配置
 COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# 复制启动脚本
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
+
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+
+# 使用自定义启动脚本
+ENTRYPOINT ["/docker-entrypoint.sh"]

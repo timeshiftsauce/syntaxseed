@@ -84,17 +84,22 @@ services:
           cpus: "1.0"
 
   frontend:
-    image: crpi-n43n60vraettswns.cn-shenzhen.personal.cr.aliyuncs.com/sqj_zcl/blog-clinent:1.0.0
+    image: crpi-n43n60vraettswns.cn-shenzhen.personal.cr.aliyuncs.com/sqj_zcl/blog-clinent:1.0.3
     build:
-      context: .
+      context: ./client
       dockerfile: Dockerfile
       target: production
+      args:
+        - VITE_API_BASEURL=/api
+        - VITE_staticHost=./
     ports:
       - "80:80"
     depends_on:
       - backend
     environment:
       NODE_ENV: production
+    volumes:
+      - ./web/head.jpg:/usr/share/nginx/html/head.jpg:ro
     restart: unless-stopped
 
   database:
