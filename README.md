@@ -1479,12 +1479,11 @@ node --inspect index.js
 
    - 在 GitHub Issues 中搜索相关问题
    - 创建新的 Issue 描述您的问题
-   - 参与 Discussions 讨论
 
 3. **联系方式**：
-   - 📧 邮箱：support@syntaxseed.com
-   - 💬 QQ 群：123456789
-   - 🐦 Twitter：@SyntaxSeed
+   - 📧 邮箱：sqj@shiqianjiang.cn
+   - 💬 QQ 群：488357273
+   - 💬 wx :13600973542
 
 ### 贡献者
 
