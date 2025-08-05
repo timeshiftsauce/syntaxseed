@@ -110,7 +110,7 @@ services:
       MYSQL_CHARACTER_SET_SERVER: utf8mb4
       MYSQL_COLLATION_SERVER: utf8mb4_unicode_ci
     ports:
-      - "127.0.0.1:3306:3306"
+      - "3306:3306"
     volumes:
       - mysql_prod_data:/var/lib/mysql
       - ./syntaxseed.sql:/docker-entrypoint-initdb.d/init.sql:ro
@@ -129,7 +129,7 @@ services:
     #删掉当前注释编辑 下面【your-secure-redis-password】
     command: redis-server --requirepass 【your-secure-redis-password】 --appendonly yes
     ports:
-      - "127.0.0.1:6379:6379"
+      - "6379:6379"
     volumes:
       - redis_prod_data:/data
     restart: unless-stopped
