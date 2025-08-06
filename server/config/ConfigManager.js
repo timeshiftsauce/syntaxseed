@@ -195,7 +195,9 @@ class ConfigManager {
         port: 7204,
         cluster: {
           enabled: false,
-          workers: require('os').cpus().length
+          workers: require('os').cpus().length,
+          restartDelay: 1000,
+          maxRestarts: 5
         }
       },
       database: {

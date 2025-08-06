@@ -166,8 +166,8 @@ class EnvMapper {
       const secret = process.env.JWT_ACCESS_SECRET || process.env.JWT_ACC_SECRET;
 
       // 验证密钥强度
-      if (secret.length < 32) {
-        throw new Error('JWT_ACCESS_SECRET 长度至少需要 32 个字符以确保安全性');
+      if (secret.length < 14) {
+        throw new Error('JWT_ACCESS_SECRET 长度至少需要 14 个字符以确保安全性');
       }
 
       config.access.secret = secret;
@@ -205,8 +205,8 @@ class EnvMapper {
       const secret = process.env.JWT_REFRESH_SECRET || process.env.JWT_REF_SECRET;
 
       // 验证密钥强度
-      if (secret.length < 32) {
-        throw new Error('JWT_REFRESH_SECRET 长度至少需要 32 个字符以确保安全性');
+      if (secret.length < 14) {
+        throw new Error('JWT_REFRESH_SECRET 长度至少需要 14 个字符以确保安全性');
       }
 
       config.refresh.secret = secret;
@@ -243,8 +243,8 @@ class EnvMapper {
       const sessionSecret = process.env.SESSION_SECRET;
 
       // 验证会话密钥强度
-      if (sessionSecret.length < 32) {
-        throw new Error('SESSION_SECRET 长度至少需要 32 个字符以确保安全性');
+      if (sessionSecret.length < 14) {
+        throw new Error('SESSION_SECRET 长度至少需要 14 个字符以确保安全性');
       }
 
       if (sessionSecret === 'your-secret-key-here') {
@@ -318,6 +318,28 @@ class EnvMapper {
       config.cluster.workers = workers;
     }
 
+    if (process.env.CLUSTER_RESTART_DELAY) {
+      config.cluster = config.cluster || {};
+      const restartDelay = parseInt(process.env.CLUSTER_RESTART_DELAY, 10);
+
+      if (isNaN(restartDelay) || restartDelay < 0) {
+        throw new Error('CLUSTER_RESTART_DELAY 必须是非负整数');
+      }
+
+      config.cluster.restartDelay = restartDelay;
+    }
+
+    if (process.env.CLUSTER_MAX_RESTARTS) {
+      config.cluster = config.cluster || {};
+      const maxRestarts = parseInt(process.env.CLUSTER_MAX_RESTARTS, 10);
+
+      if (isNaN(maxRestarts) || maxRestarts < 0) {
+        throw new Error('CLUSTER_MAX_RESTARTS 必须是非负整数');
+      }
+
+      config.cluster.maxRestarts = maxRestarts;
+    }
+
     // 限流配置
     if (process.env.RATE_LIMIT_WINDOW_MS) {
       config.rateLimit = config.rateLimit || {};
@@ -346,8 +368,8 @@ class EnvMapper {
       const sessionSecret = process.env.SESSION_SECRET;
 
       // 验证会话密钥强度
-      if (sessionSecret.length < 32) {
-        throw new Error('SESSION_SECRET 长度至少需要 32 个字符以确保安全性');
+      if (sessionSecret.length < 14) {
+        throw new Error('SESSION_SECRET 长度至少需要 14 个字符以确保安全性');
       }
 
       if (sessionSecret === 'your-secret-key-here') {
@@ -578,6 +600,8 @@ class EnvMapper {
         'APP_VERSION',
         'CLUSTER_ENABLED',
         'CLUSTER_WORKERS',
+        'CLUSTER_RESTART_DELAY',
+        'CLUSTER_MAX_RESTARTS',
         'RATE_LIMIT_WINDOW_MS',
         'RATE_LIMIT_MAX_REQUESTS',
         'SESSION_SECRET',

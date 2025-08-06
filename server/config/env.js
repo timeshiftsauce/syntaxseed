@@ -22,7 +22,6 @@
  */
 
 // 加载环境变量
-require('dotenv').config()
 
 // 引入新的配置管理系统
 const ConfigManager = require('./ConfigManager')
@@ -147,6 +146,7 @@ const legacyConfig = {
 }
 
 // 统一配置对象：优先使用新配置系统，回退到传统配置
+
 const config = modernConfig || legacyConfig
 console.log("config******",config)
 // 验证必要的配置

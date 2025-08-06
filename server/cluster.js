@@ -9,8 +9,10 @@ const { config, validateConfig, displayConfig, isClusterEnabled } = require('./c
 validateConfig()
 
 // 集群配置
-const CLUSTER_CONFIG = config.cluster
+require('dotenv').config()
 
+const CLUSTER_CONFIG = config.app ? config.app.cluster : config.cluster
+// console.log(config)
 // 工作进程重启计数器
 const workerRestarts = new Map()
 

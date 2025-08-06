@@ -361,3 +361,2363 @@ ReferenceError: Cannot access 'site' before initialization
     }
   ]
 }
+2025/8/6-14:20:43.31 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:20:43 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 42620,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 77180928,
+      "heapTotal": 52432896,
+      "heapUsed": 25657304,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430376.171
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:20:43.31 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:20:43 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 51288,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 76963840,
+      "heapTotal": 52432896,
+      "heapUsed": 25621432,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430376.171
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:20:44.87 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:20:44 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 43532,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 77058048,
+      "heapTotal": 52695040,
+      "heapUsed": 25517928,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430377.734
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:20:44.87 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:20:44 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 44480,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 77647872,
+      "heapTotal": 53219328,
+      "heapUsed": 25695512,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430377.734
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:20:46.39 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:20:46 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 36164,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 77197312,
+      "heapTotal": 52432896,
+      "heapUsed": 25675248,
+      "external": 2446300,
+      "arrayBuffers": 213949
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430379.265
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:20:46.39 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:20:46 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 51756,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 77275136,
+      "heapTotal": 52957184,
+      "heapUsed": 25783528,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430379.265
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:20:47.97 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:20:47 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 36752,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 77119488,
+      "heapTotal": 52695040,
+      "heapUsed": 25583896,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430380.843
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:20:47.97 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:20:47 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 8900,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 77492224,
+      "heapTotal": 52957184,
+      "heapUsed": 25671448,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430380.843
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:21:30.61 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:21:30 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 24652,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 75427840,
+      "heapTotal": 52432896,
+      "heapUsed": 25454560,
+      "external": 2346648,
+      "arrayBuffers": 133595
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430423.484
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:21:54.74 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:21:54 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 47236,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 76812288,
+      "heapTotal": 51908608,
+      "heapUsed": 25601512,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430447.609
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:21:54.74 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:21:54 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 25872,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 77307904,
+      "heapTotal": 52695040,
+      "heapUsed": 25673960,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430447.609
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:21:56.29 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:21:56 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 37344,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 77291520,
+      "heapTotal": 52695040,
+      "heapUsed": 25738336,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430449.156
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:21:56.29 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:21:56 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 42812,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 76849152,
+      "heapTotal": 52432896,
+      "heapUsed": 25663880,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430449.156
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:22:15.28 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:42:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:42:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:22:15 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 11796,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 74788864,
+      "heapTotal": 52695040,
+      "heapUsed": 25586448,
+      "external": 2346648,
+      "arrayBuffers": 133595
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430468.14
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 42,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:22:46.04 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:47:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:47:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:22:46 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 51368,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 76931072,
+      "heapTotal": 52170752,
+      "heapUsed": 25640896,
+      "external": 2346648,
+      "arrayBuffers": 133595
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430498.906
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 47,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:22:54.05 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:47:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:47:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:22:54 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 21720,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 76419072,
+      "heapTotal": 52432896,
+      "heapUsed": 25670840,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430506.906
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 47,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:22:54.05 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:47:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:47:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:22:54 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 51656,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 77357056,
+      "heapTotal": 52695040,
+      "heapUsed": 25642440,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430506.906
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 47,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:22:55.65 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:47:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:47:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:22:55 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 23692,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 77787136,
+      "heapTotal": 53219328,
+      "heapUsed": 25649960,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430508.515
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 47,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:22:55.65 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:47:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:47:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:22:55 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 46012,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 76984320,
+      "heapTotal": 52432896,
+      "heapUsed": 25705592,
+      "external": 2366168,
+      "arrayBuffers": 133817
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430508.515
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 47,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2025/8/6-14:23:24.28 [error]: uncaughtException: RedisStore is not a constructor
+TypeError: RedisStore is not a constructor
+    at Object.<anonymous> (D:\code\SyntaxSeed-Blog\server\index.js:51:10)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+{
+  "error": {},
+  "stack": "TypeError: RedisStore is not a constructor\n    at Object.<anonymous> (D:\\code\\SyntaxSeed-Blog\\server\\index.js:51:10)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49",
+  "exception": true,
+  "date": "Wed Aug 06 2025 14:23:24 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 40524,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\code\\SyntaxSeed-Blog\\server",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.17.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "D:\\code\\SyntaxSeed-Blog\\server\\index.js"
+    ],
+    "memoryUsage": {
+      "rss": 76591104,
+      "heapTotal": 52170752,
+      "heapUsed": 25625336,
+      "external": 2346648,
+      "arrayBuffers": 133595
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 430537.14
+  },
+  "trace": [
+    {
+      "column": 10,
+      "file": "D:\\code\\SyntaxSeed-Blog\\server\\index.js",
+      "function": null,
+      "line": 51,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1730,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1895,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1465,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1282,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 171,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 36,
+      "method": null,
+      "native": false
+    }
+  ]
+}

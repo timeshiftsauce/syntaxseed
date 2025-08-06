@@ -2,10 +2,13 @@ const express = require('express')
 const cluster = require('cluster')
 const cors = require('cors')
 const session = require("express-session")
+const { RedisStore } = require('connect-redis')
+require('dotenv').config()
 
 
 // 加载配置
 const { config, PORT, isDevelopment } = require('./config/env')
+const { redis } = require('./db')
 
 const app = express()
 const getDataRouter = require('./getData/index.js')
@@ -33,12 +36,18 @@ app.use(express.json({ limit: '10mb' })) // 限制请求体大小
 
 // 静态文件服务 - 提供sitemap.xml
 app.use(express.static('public'))
+
+// 配置 Redis 会话存储
 app.use(session({
-  secret: "!@#$646456456456fjsjfkojskolf%",
+  store: new RedisStore({ client: redis }),
+  secret: config.session.secret,
   resave: false,
-  saveUninitialized: true,
+  saveUninitialized: false,
   cookie: {
-    secure: false
+    secure: config.app.env === 'production' && process.env.HTTPS === 'true', // 生产环境且使用HTTPS时启用
+    httpOnly: true, // 防止XSS攻击
+    maxAge: 24 * 60 * 60 * 1000, // 24小时过期
+    sameSite: 'lax' // CSRF保护
   }
 }))
 // 全局限流中间件
