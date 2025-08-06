@@ -2,7 +2,7 @@ db:
   client: "mysql2"
   connection:
     host: "47.96.72.224"
-    user: "root"
+    user: "syntaxseed"
     password: "20081005zcl"
     database: "syntaxseed"
     port: 3306

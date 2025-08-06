@@ -30,6 +30,9 @@ const workerPid = process.pid
 // 基础中间件
 app.use(cors())
 app.use(express.json({ limit: '10mb' })) // 限制请求体大小
+
+// 静态文件服务 - 提供sitemap.xml
+app.use(express.static('public'))
 app.use(session({
   secret: "!@#$646456456456fjsjfkojskolf%",
   resave: false,
@@ -265,7 +268,17 @@ if (isWorker) {
 app.use('/api', apiLimiter, getDataRouter)
 // 认证路由（模拟版本，不使用数据库）
 app.use('/api/auth', authRouter)
+// Sitemap路由
 
+const site = require('./getData/sitemap.js')
+const baiduPush = require('./getData/baiduPush.js')
+const scheduledPush = require('./getData/scheduledPush.js')
+const searchEnginePush = require('./getData/searchEnginePush.js')
+
+app.use('/api/sitemap', site)
+app.use('/api/baidu-push', baiduPush)
+app.use('/api/scheduled-push', scheduledPush)
+app.use('/api/search-engine-push', searchEnginePush)
 
 
 // 404处理
@@ -295,6 +308,29 @@ const server = app.listen(PORT, () => {
   const processType = isWorker ? `工作进程 ${workerId} (PID: ${workerPid})` : '单进程模式'
   console.log(`${processType} 服务器已启动: http://localhost:${PORT}`)
   console.log(`健康检查: http://localhost:${PORT}/health`)
+
+  // 初始化sitemap和推送服务（只在主进程或单进程模式下启动）
+  if (!isWorker || workerId === 1) {
+    try {
+      const sitemapService = require('./services/sitemapService')
+      const scheduledPushService = require('./services/scheduledPushService')
+      const { initSitemap } = require('./scripts/initSitemap')
+
+      // 启动sitemap定期生成任务
+      sitemapService.startScheduledGeneration()
+      console.log('Sitemap定期生成服务已启动')
+
+      // 启动定时推送任务
+      scheduledPushService.startAllTasks()
+
+      // 初始化sitemap（异步执行，不阻塞服务器启动）
+      initSitemap().catch(error => {
+        console.error('初始化sitemap失败:', error)
+      })
+    } catch (error) {
+      console.error('启动sitemap和推送服务失败:', error)
+    }
+  }
 
   // 工作进程启动后发送就绪消息
   if (isWorker && process.send) {
